@@ -6,7 +6,7 @@
     padding: 2rem 4rem;
     border-bottom: 1px solid var(--grey-100);
 
-    p{
+    p {
         margin-left: 2rem;
         padding: 0.25rem 0 0.25rem 2rem;
         border-left: 1px solid var(--grey-100)
@@ -15,5 +15,9 @@
     span {
         margin-left: auto;
         text-transform: capitalize;
+    }
+
+    .dark {
+        filter: invert(1) hue-rotate(180deg);
     }
 }

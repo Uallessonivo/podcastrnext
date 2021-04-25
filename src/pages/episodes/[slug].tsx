@@ -6,7 +6,7 @@ import { api } from "../../services/api";
 import { convertDurationToTimeString } from "../../utils/convertDurationToTimeString";
 import styles from "./episode.module.scss";
 import Link from "next/link";
-import { PlayerContext, usePlayer } from "../../contexts/PlayerContext";
+import { usePlayer } from "../../contexts/PlayerContext";
 import Head from "next/head";
 
 type Episode = {
