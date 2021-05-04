@@ -5,6 +5,11 @@
     overflow: hidden;
 }
 
+::-webkit-scrollbar {
+    display: none;
+}
+
+
 @media (max-width: 1366px) {
     html {
         font-size: 80%;
@@ -40,8 +45,52 @@
     }
 }
 
-body {
+body.light-mode  {
     background-color: var(--gray-50);
+}
+
+body.dark-mode {
+    background-color: #121212;
+
+    h1,h2,h3,h4,h5,h6 {
+        color: var(--gray-100);
+    }
+
+    table td a {
+        color: var(--gray-100);
+    }
+
+    table td button {
+        background: linear-gradient(143.8deg, rgba(145, 100, 250, 0.2) 0%, rgba(0, 0, 0, 0) 100%);
+        border: none;
+    }
+
+    ul li {
+        background: linear-gradient(143.8deg, rgba(145, 100, 250, 0.2) 0%, rgba(0, 0, 0, 0) 100%);
+        border: none;
+    }
+
+    ul li button {
+        background: white;
+        border: none;
+    }
+    
+    li p {
+        color: var(--gray-100);
+    }
+
+    li span {
+        color: var(--gray-100);
+    }
+
+    main header {
+        background: #161616;
+    }
+
+    header p, header div span {
+        color: var(--gray-100);
+    }
+
 }
 
 
@@ -76,3 +125,4 @@ h2 {
 button {
     cursor: pointer;
 }
+
