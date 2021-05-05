@@ -61,12 +61,16 @@ body.dark-mode {
     }
 
     table td button {
-        background: linear-gradient(143.8deg, rgba(145, 100, 250, 0.2) 0%, rgba(0, 0, 0, 0) 100%);
+        background: var(--purple-500);
         border: none;
     }
 
+    table tbody td button img {
+        filter: brightness(0) invert(1);
+    }
+
     ul li {
-        background: linear-gradient(143.8deg, rgba(145, 100, 250, 0.2) 0%, rgba(0, 0, 0, 0) 100%);
+        background: var(--purple-500);
         border: none;
     }
 
@@ -85,6 +89,10 @@ body.dark-mode {
 
     main header {
         background: #161616;
+    }
+
+    main header img {
+        filter: brightness(0) invert(1);
     }
 
     header p, header div span {

@@ -1,10 +1,17 @@
 import React from "react";
-import Switches from "../Switch";
+import styles from "./styles.module.scss";
 
 const Toggle = ({ checked, onChange }) => (
-  <button onChange={onChange}>
-    <Switches />
-  </button>
+  <span className={styles.toggleControl}>
+    <input
+      className={styles.dmcheck}
+      type="checkbox"
+      checked={checked}
+      onChange={onChange}
+      id="dmcheck"
+    />
+    <label htmlFor="dmcheck" />
+  </span>
 );
 
 export default Toggle;

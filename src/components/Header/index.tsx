@@ -2,7 +2,6 @@ import format from "date-fns/format";
 import ptBR from "date-fns/locale/pt-BR";
 import DarkModeToggle from "../Toogle/DarkModeToggle";
 import styles from "./styles.module.scss";
-import DarkModeStatus from "../Toogle/DarkModeStatus";
 
 export function Header() {
   const currentDate = format(new Date(), "EEEEEE, d MMMM", {
