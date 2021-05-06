@@ -10,6 +10,7 @@
     transition: color 0.3s ease;
     &:last-child {
       color: #666;
+      margin-bottom: 1px;
     }
 
     &:focus {
@@ -23,7 +24,7 @@
   padding: 0 4px;
   display: flex;
   align-items: center;
-  margin-right: 8px;
+  margin-right: 6px;
 }
 
 input[type='checkbox'].dmcheck {
