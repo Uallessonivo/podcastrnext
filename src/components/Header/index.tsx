@@ -10,8 +10,10 @@ export function Header() {
 
   return (
     <header className={styles.headerContainer}>
-      <img src="/logo.svg" alt="Logo podcast" />
-      <p>O Melhor para você ouvir, sempre</p>
+      <nav>
+        <img src="/logo.svg" alt="Logo podcast" />
+        <p>O Melhor para você ouvir, sempre</p>
+      </nav>
       <div>
         <DarkModeToggle />
         <span>{currentDate}</span>
